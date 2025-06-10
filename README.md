@@ -1,10 +1,10 @@
+🌍 AI Job Market Analysis 2025
 Author: Anh Linh Le
-AI Job Market Analysis 2025
 
-Executive Summary
-This project analyzes the global AI job market in 2025 using a comprehensive dataset of job postings. The objectives were to identify key factors influencing AI job salaries, understand the demand for specific technical skills by region and over time, and assess diversity, inclusion, and benefits signals across industries and company types. Using robust data science methods—including feature engineering, regression modeling, and trend analysis—we deliver actionable insights for job seekers, employers, and policymakers.
+📌 Executive Summary
+This project analyzes the global AI job market in 2025 using a curated dataset of job postings. It aims to identify the key factors driving AI job salaries, trends in technical skill demand, and diversity and benefit signals across industries and regions. Through feature engineering, regression modeling, and trend analysis, we provide actionable insights for job seekers, employers, and policymakers.
 
-Table of Contents
+📚 Table of Contents
 Introduction & Problem Statement
 
 Data Description
@@ -23,93 +23,98 @@ Conclusions & Recommendations
 
 Limitations & Future Work
 
-1. Introduction & Problem Statement
-The rapid expansion of AI has led to a highly competitive global job market. Stakeholders need to understand which skills, experiences, and company characteristics drive compensation, and how demand for AI talent is evolving across regions and industries. Our goals:
+🧠 Introduction & Problem Statement
+The explosive growth of AI has resulted in a competitive global job market. Employers, job seekers, and governments need clarity on what drives AI job salaries, which skills are most in demand, and how equitable and attractive AI roles are across regions and sectors.
 
-Predict AI job salaries based on job, company, and skill attributes.
+Goals:
 
-Identify the most in-demand AI/ML skills by geography and time.
+Predict AI job salaries using job, skill, and company attributes
 
-Analyze benefits and diversity signals in job postings.
+Track skill demand evolution by geography and time
 
-2. Data Description
-Source: Aggregated global AI job postings (2024–2025).
+Analyze diversity, education, benefits, and work arrangement patterns
 
-Key Columns:
+📊 Data Description
+Source: Aggregated dataset of global AI job postings (2024–2025)
+Size: [Insert number of rows, e.g., 10,000+]
 
-Job metadata: job_id, job_title, company_name, posting_date, application_deadline
+Key Fields:
 
-Compensation: salary_usd, salary_currency, salary_usd_norm
+job_id, job_title, company_name, posting_date, application_deadline
 
-Experience & education: experience_level_*, years_experience, education_required_*
+salary_usd, salary_currency, salary_usd_norm
 
-Company: company_location, company_size_*, industry_*
+experience_level, years_experience, education_required
 
-Skills: required_skills, skills_list, skill_*
+company_location, company_size, industry
 
-Work arrangement: remote_ratio, is_remote, is_hybrid, is_onsite
+required_skills, skills_list, skill_*
 
-Benefits: benefits_score
+remote_ratio, is_remote, is_hybrid, is_onsite
 
-Size: [Insert number of rows, e.g., 10,000+ postings]
+benefits_score
 
 Preprocessing:
 
-One-hot encoding for categorical variables
+One-hot encoding of categorical variables
 
-Skill extraction from required_skills
+Skill extraction from free-text fields
 
 Feature normalization
 
-3. Methods & Analysis Pipeline
-Exploratory Data Analysis: Identified distributions, missing values, and outliers.
+🧪 Methods & Analysis Pipeline
+✅ 1. Exploratory Data Analysis
+Checked distributions, missing values, and outliers
 
-Feature Engineering: One-hot encoded experience, education, company size, industry, and skills. Created normalized features and binary work arrangement flags.
+⚙️ 2. Feature Engineering
+Encoded categorical features (e.g., education, industry)
 
-Modeling:
+Normalized salary data
 
-Regression models (Linear Regression, Random Forest, XGBoost) to predict normalized salary.
+Created binary flags for remote/hybrid/onsite roles
 
-Model evaluation using MAE, RMSE, and R².
+🤖 3. Salary Modeling
+Trained Linear Regression, Random Forest, and XGBoost models
 
-Skill Trend Analysis:
+Evaluated performance using MAE, RMSE, and R²
 
-Exploded skill lists and aggregated counts by country and month.
+📈 4. Skill Trend Analysis
+Exploded skill lists
 
-Visualized top skills over time and geography.
+Aggregated by month and country
 
-Benefits & D&I Analysis:
+Visualized top trending skills
 
-Analyzed benefits_score by company size, industry, and work arrangement.
+💼 5. Benefits & D&I Analysis
+Grouped benefits_score by industry and work arrangement
 
-Examined education requirements distribution.
+Analyzed education requirements across postings
 
-4. Results & Visualizations
+📊 Results & Visualizations
 4.1 Salary Modeling
-Model Performance (Test Set):
-
 Model	MAE	RMSE	R²
 Linear Regression	0.0933	0.1205	0.6467
 Random Forest	0.0947	0.1242	0.6248
 XGBoost	0.0993	0.1303	0.5872
-Linear Regression performed best, explaining ~65% of salary variance.
 
-Feature Importance (Random Forest):
+💡 Best Model: Linear Regression, explaining ~65% of salary variance.
 
-Top drivers of salary included:
+🔑 Top Salary Drivers (Feature Importance - Random Forest):
 
-Years of experience
+Years of Experience
 
-Key technical skills (e.g., Python, TensorFlow)
+Technical Skills (e.g., Python, TensorFlow)
 
-Company size and industry
+Company Size
 
-Remote work status
+Industry Sector
 
-(Insert bar chart of top 10 feature importances here)
+Remote/Hybrid Status
+
+(Insert Feature Importance Bar Chart)
 
 4.2 Skill Demand Trends
-Top 5 Most In-Demand AI Skills Globally:
+🌐 Top 5 In-Demand AI Skills (Global):
 
 Python
 
@@ -121,77 +126,67 @@ Kubernetes
 
 Scala
 
-Skill Demand Over Time (United States & India):
+📊 Trends in US vs. India (2024–2025):
 
-(Insert line plots showing monthly demand for each skill in each country)
+Python and TensorFlow maintained steady demand
 
-Demand for Python and TensorFlow remained high and stable, while demand for Kubernetes and MLOps showed notable growth, especially in India.
+Kubernetes and MLOps-related skills surged in India
+
+(Insert line plots of skill trends by country)
 
 4.3 Benefits & D&I Analysis
-Average Benefits Score by Industry (Top 10):
-
+🏢 Average Benefits Score by Industry:
 (Insert horizontal bar chart)
 
-Technology and Finance sectors offered the highest average benefits.
+Tech and Finance sectors lead in benefits
 
-Retail and Government sectors trailed behind.
+Retail and Government sectors lag behind
 
-Benefits Score by Work Arrangement:
+🏠 Work Arrangement vs. Benefits:
+(Insert bar chart: remote > hybrid > onsite)
 
-(Insert bar chart comparing remote, hybrid, onsite)
+Remote roles show slightly higher average benefits
 
-Remote and hybrid roles offered slightly higher benefits on average.
+🎓 Education Requirements:
 
-Education Requirements Distribution:
+Most jobs require Bachelor’s
 
-(Insert bar chart)
+Master's and PhDs are less common but linked to higher pay
+(Insert education level distribution bar chart)
 
-Majority of postings required at least a Bachelor’s degree; Master’s and PhD requirements were less common.# AI_Job_Market
+✅ Conclusions & Recommendations
+💰 Salary Drivers
+Years of Experience: Strongest influence
 
-5. Conclusions & Recommendations
-Salary Drivers
-Our salary prediction models (Linear Regression, Random Forest, XGBoost) and feature importance analysis reveal the following key drivers of AI job salaries in 2025:
+Technical Skills: Deep learning & MLOps (e.g., TensorFlow, Kubernetes) command premium
 
-Years of Experience:
-The most significant factor—more experience is strongly associated with higher salaries.
+Company Size & Industry: Bigger firms in Tech, Finance, Healthcare pay more
 
-Technical Skills:
-Certain skills have a substantial positive impact on salary. In particular:
+Work Arrangement: Remote/hybrid roles offer slightly better compensation
 
-Python and SQL are foundational and expected, but
+Education: Grad degrees help but less than skills & experience
 
-TensorFlow, PyTorch, and Deep Learning skills command a premium.
+🎯 Job Seeker Advice
+Upskill in Deep Learning, Cloud (GCP, Azure), and MLOps
 
-Cloud and MLOps skills (e.g., Kubernetes, GCP, Azure, MLOps) are increasingly valued, reflecting industry adoption of scalable AI solutions.
+Apply to large firms in high-paying sectors
 
-Company Size:
-Larger companies (especially those flagged as company_size_m) tend to offer higher salaries, likely due to greater resources and more complex AI initiatives.
+Showcase project experience and key AI tools
 
-Industry:
-AI roles in Technology, Finance, and Healthcare sectors offer higher compensation compared to sectors like Retail or Government.
+Don’t overlook remote/hybrid options
 
-Remote & Hybrid Work:
-There is a mild positive correlation between remote/hybrid roles and salary, suggesting companies may pay more to attract remote AI talent.
+🏢 Employer Suggestions
+Competitive salaries required for top AI talent
 
-Education Level:
-Advanced degrees (Master’s, PhD) are associated with higher salaries, but the effect is less pronounced than experience and technical skill set.
+Benefits and flexibility matter
 
-Recommendations
-For Job Seekers:
+Upskilling internal staff in AI pays off
 
-Focus on developing advanced AI/ML skills, especially in deep learning, cloud platforms, and MLOps.
+🧩 Limitations & Future Work
+Limited to job posting data (not actual hiring outcomes)
 
-Target larger companies and high-paying industries (Tech, Finance, Healthcare) for better compensation.
+Region-level skill analysis may miss local nuances
 
-Highlight years of experience and relevant projects on resumes.
+Future: Integrate real-world hiring data & candidate outcomes
 
-Consider remote/hybrid opportunities, which may offer both flexibility and competitive pay.
-
-For Employers:
-
-To attract top AI talent, offer competitive salaries, especially for roles requiring deep learning, cloud, and MLOps skills.
-
-Invest in upskilling programs for employees in emerging AI technologies.
-
-Enhance benefits and flexible work arrangements to remain competitive in the global talent market.
 
