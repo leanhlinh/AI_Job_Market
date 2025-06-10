@@ -115,7 +115,9 @@ XGBoost	0.0993	0.1303	0.5872
 
 📊 Trends in Australia vs US vs India (2024–2025):
 
-![image](https://github.com/user-attachments/assets/9eadf014-8219-4748-a805-8b227e7f661a)
+
+![image](https://github.com/user-attachments/assets/cd23bc99-1d3d-462f-83cd-4263c77dd488)
+
 
 
 
