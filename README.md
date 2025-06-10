@@ -36,7 +36,7 @@ Analyze diversity, education, benefits, and work arrangement patterns
 
 📊 Data Description
 Source: Aggregated dataset of global AI job postings (2024–2025)
-Size: [Insert number of rows, e.g., 10,000+]
+Size: 15000 entries
 
 Key Fields:
 
@@ -67,7 +67,7 @@ Feature normalization
 Checked distributions, missing values, and outliers
 
 ⚙️ 2. Feature Engineering
-Encoded categorical features (e.g., education, industry)
+Encoded categorical features 
 
 Normalized salary data
 
@@ -101,58 +101,42 @@ XGBoost	0.0993	0.1303	0.5872
 
 🔑 Top Salary Drivers (Feature Importance - Random Forest):
 
-Years of Experience
+![image](https://github.com/user-attachments/assets/cc1b93e8-17c1-462b-b18e-7f2c8d109cc8)
 
-Technical Skills (e.g., Python, TensorFlow)
-
-Company Size
-
-Industry Sector
-
-Remote/Hybrid Status
-
-(Insert Feature Importance Bar Chart)
 
 4.2 Skill Demand Trends
-🌐 Top 5 In-Demand AI Skills (Global):
+🌐 Top 20 In-Demand AI Skills (Global):
 
-Python
+![image](https://github.com/user-attachments/assets/0026b32d-a477-4e75-9df4-6282b67ea515)
 
-SQL
 
-TensorFlow
 
-Kubernetes
+📊 Trends in Australia vs US vs India (2024–2025):
 
-Scala
+![image](https://github.com/user-attachments/assets/9eadf014-8219-4748-a805-8b227e7f661a)
 
-📊 Trends in US vs. India (2024–2025):
-
-Python and TensorFlow maintained steady demand
-
-Kubernetes and MLOps-related skills surged in India
-
-(Insert line plots of skill trends by country)
 
 4.3 Benefits & D&I Analysis
 🏢 Average Benefits Score by Industry:
-(Insert horizontal bar chart)
+![image](https://github.com/user-attachments/assets/09b224ee-3a21-42ee-8b85-f2c4b5e6481a)
 
 Tech and Finance sectors lead in benefits
 
 Retail and Government sectors lag behind
 
 🏠 Work Arrangement vs. Benefits:
-(Insert bar chart: remote > hybrid > onsite)
+![image](https://github.com/user-attachments/assets/e8a8b96d-0085-452c-a186-dda45005a0b9)
 
 Remote roles show slightly higher average benefits
 
 🎓 Education Requirements:
 
+![Uploading image.png…]()
+
 Most jobs require Bachelor’s
 
 Master's and PhDs are less common but linked to higher pay
-(Insert education level distribution bar chart)
+
 
 ✅ Conclusions & Recommendations
 💰 Salary Drivers
