@@ -131,7 +131,8 @@ Remote roles show slightly higher average benefits
 
 🎓 Education Requirements:
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/f2c14edb-5fd5-4a19-946d-00693131104b)
+
 
 Most jobs require Bachelor’s
 
