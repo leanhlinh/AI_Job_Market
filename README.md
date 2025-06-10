@@ -111,9 +111,15 @@ XGBoost	0.0993	0.1303	0.5872
 
 
 
+
+
 📊 Trends in Australia vs US vs India (2024–2025):
 
 ![image](https://github.com/user-attachments/assets/9eadf014-8219-4748-a805-8b227e7f661a)
+
+
+
+
 
 
 4.3 Benefits & D&I Analysis
@@ -124,10 +130,16 @@ Tech and Finance sectors lead in benefits
 
 Retail and Government sectors lag behind
 
+
+
+
 🏠 Work Arrangement vs. Benefits:
 ![image](https://github.com/user-attachments/assets/e8a8b96d-0085-452c-a186-dda45005a0b9)
 
 Remote roles show slightly higher average benefits
+
+
+
 
 🎓 Education Requirements:
 
