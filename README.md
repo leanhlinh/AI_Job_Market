@@ -126,7 +126,9 @@ XGBoost	0.0993	0.1303	0.5872
 
 4.3 Benefits & D&I Analysis
 🏢 Average Benefits Score by Industry:
-![image](https://github.com/user-attachments/assets/09b224ee-3a21-42ee-8b85-f2c4b5e6481a)
+
+![image](https://github.com/user-attachments/assets/2211bb8a-c352-47c3-b919-2c4dfaf5e90f)
+
 
 Tech and Finance sectors lead in benefits
 
@@ -136,7 +138,10 @@ Retail and Government sectors lag behind
 
 
 🏠 Work Arrangement vs. Benefits:
-![image](https://github.com/user-attachments/assets/e8a8b96d-0085-452c-a186-dda45005a0b9)
+
+
+![image](https://github.com/user-attachments/assets/17f13a30-f596-4210-929c-35c6d45744f0)
+
 
 Remote roles show slightly higher average benefits
 
